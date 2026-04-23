@@ -4,3 +4,135 @@
 [submodule "aiox-core"]
 	path = aiox-core
 	url = https://github.com/SynkraAI/aiox-core.git
+[submodule "agent-skills-context-eng"]
+	path = agent-skills-context-eng
+	url = https://github.com/muratcankoylan/agent-skills-for-context-engineering
+[submodule "agent-skills-context-engineering"]
+	path = agent-skills-context-engineering
+	url = https://github.com/muratcankoylan/agent-skills-for-context-engineering
+[submodule "agent-skills-for-context-engineering"]
+	path = agent-skills-for-context-engineering
+	url = https://github.com/muratcankoylan/agent-skills-for-context-engineering
+[submodule "ai-marketing-claude"]
+	path = ai-marketing-claude
+	url = https://github.com/zubair-trabzada/ai-marketing-claude
+[submodule "aios-core"]
+	path = aios-core
+	url = https://github.com/SynkraAI/aios-core
+[submodule "ai-sales-team-claude"]
+	path = ai-sales-team-claude
+	url = https://github.com/zubair-trabzada/ai-sales-team-claude
+[submodule "anthropics-skills"]
+	path = anthropics-skills
+	url = https://github.com/anthropics/skills
+[submodule "antigravity-awesome-skills"]
+	path = antigravity-awesome-skills
+	url = https://github.com/sickn33/antigravity-awesome-skills
+[submodule "antigravity-kit"]
+	path = antigravity-kit
+	url = https://github.com/vudovn/antigravity-kit
+[submodule "awesome-agent-skills"]
+	path = awesome-agent-skills
+	url = https://github.com/VoltAgent/awesome-agent-skills
+[submodule "awesome-claude-code"]
+	path = awesome-claude-code
+	url = https://github.com/hesreallyhim/awesome-claude-code
+[submodule "awesome-claude-skills"]
+	path = awesome-claude-skills
+	url = https://github.com/ComposioHQ/awesome-claude-skills
+[submodule "claude-code-templates"]
+	path = claude-code-templates
+	url = https://github.com/davila7/claude-code-templates
+[submodule "claude-mem"]
+	path = claude-mem
+	url = https://github.com/thedotmack/claude-mem
+[submodule "claude-skills"]
+	path = claude-skills
+	url = https://github.com/alirezarezvani/claude-skills
+[submodule "context7"]
+	path = context7
+	url = https://github.com/upstash/context7
+[submodule "context-mode"]
+	path = context-mode
+	url = https://github.com/mksglu/context-mode
+[submodule "everything-claude-code"]
+	path = everything-claude-code
+	url = https://github.com/affaan-m/everything-claude-code
+[submodule "firecrawl-claude-plugin"]
+	path = firecrawl-claude-plugin
+	url = https://github.com/firecrawl/firecrawl-claude-plugin
+[submodule "get-shit-done"]
+	path = get-shit-done
+	url = https://github.com/gsd-build/get-shit-done
+[submodule "GitNexus"]
+	path = GitNexus
+	url = https://github.com/abhigyanpatwari/GitNexus
+[submodule "goviralbro"]
+	path = goviralbro
+	url = https://github.com/charlesdove977/goviralbro
+[submodule "graphify"]
+	path = graphify
+	url = https://github.com/safishamsi/graphify.git
+[submodule "higgsfield-seedance2-jineng"]
+	path = higgsfield-seedance2-jineng
+	url = https://github.com/beshuaxian/higgsfield-seedance2-jineng
+[submodule "marketingskills"]
+	path = marketingskills
+	url = https://github.com/coreyhaines31/marketingskills
+[submodule "massgen"]
+	path = massgen
+	url = https://github.com/massgen/massgen
+[submodule "MiroFish"]
+	path = MiroFish
+	url = https://github.com/666ghj/MiroFish
+[submodule "notebooklm-skill"]
+	path = notebooklm-skill
+	url = https://github.com/PleasePrompto/notebooklm-skill
+[submodule "obsidian-master-kit"]
+	path = obsidian-master-kit
+	url = https://github.com/melgarafael/obsidian-master-kit.git
+[submodule "obsidian-skills"]
+	path = obsidian-skills
+	url = https://github.com/kepano/obsidian-skills
+[submodule "OmniRoute"]
+	path = OmniRoute
+	url = https://github.com/diegosouzapw/OmniRoute
+[submodule "OpenSpec"]
+	path = OpenSpec
+	url = https://github.com/Fission-AI/OpenSpec
+[submodule "pixel-agents"]
+	path = pixel-agents
+	url = https://github.com/pablodelucca/pixel-agents
+[submodule "planning-with-files"]
+	path = planning-with-files
+	url = https://github.com/OthmanAdi/planning-with-files
+[submodule "ralph-claude-code"]
+	path = ralph-claude-code
+	url = https://github.com/frankbria/ralph-claude-code
+[submodule "remotion"]
+	path = remotion
+	url = https://github.com/remotion-dev/remotion
+[submodule "rtk"]
+	path = rtk
+	url = https://github.com/rtk-ai/rtk
+[submodule "skills"]
+	path = skills
+	url = https://github.com/trailofbits/skills
+[submodule "skyreels-v2"]
+	path = skyreels-v2
+	url = https://github.com/SkyworkAI/SkyReels-V2
+[submodule "superpowers"]
+	path = superpowers
+	url = https://github.com/obra/superpowers
+[submodule "superpowers-marketplace"]
+	path = superpowers-marketplace
+	url = https://github.com/obra/superpowers-marketplace
+[submodule "trailofbits-skills"]
+	path = trailofbits-skills
+	url = https://github.com/trailofbits/skills
+[submodule "ui-ux-pro-max-skill"]
+	path = ui-ux-pro-max-skill
+	url = https://github.com/nextlevelbuilder/ui-ux-pro-max-skill
+[submodule "xquads-squads"]
+	path = xquads-squads
+	url = https://github.com/ohmyjahh/xquads-squads

@@ -1,293 +1,662 @@
-# 📦 Claude Skills — Ecossistema Jarvis
+# Claude Skills — Ecossistema Jarvis
 
-**45 Repositórios + 1553 Skills + 10 Agentes AIOX + Memory Persistente**
+### Infraestrutura modular e em evolução contínua para desenvolvimento com IA agentiva
 
-Um ecossistema completo de desenvolvimento com IA orquestrado.
+## Status Atual
+
+🔵 **Pesquisa / P&D — Ecossistema ativo e em evolução contínua**
+
+O **Claude Skills — Ecossistema Jarvis** é uma infraestrutura experimental para desenvolvimento assistido por IA, reunindo **skills, agentes, MCP servers, sistemas de memória, ferramentas de contexto, workflows e componentes de automação** em uma arquitetura modular baseada em Git e submódulos.
+
+Atualmente, o ecossistema integra **45 repositórios**, organizados como componentes reutilizáveis para desenvolvimento com IA agentiva.
+
+Esse número **não é fixo**. Novos repositórios, ferramentas, frameworks, agentes, MCP servers e capacidades são continuamente avaliados e incorporados conforme novas necessidades, experimentos e oportunidades de integração surgem.
+
+### Estado atual
+
+| Componente                  | Estado atual                 |
+| --------------------------- | ---------------------------- |
+| **45 Repositórios**         | ✅ Integrados                 |
+| **1553 Skills**             | ✅ Disponíveis para discovery |
+| **10 Agentes AIOX**         | ✅ Integrados                 |
+| **3 MCP Servers**           | ✅ Integrados                 |
+| **Memory Persistente**      | ✅ Ativo                      |
+| **Graphify**                | ✅ Integrado                  |
+| **Expansão do ecossistema** | 🔄 Contínua                  |
+
+```text
+45 Repos atuais
+      ↓
+Avaliação de novas ferramentas
+      ↓
+Integração de novos componentes
+      ↓
+Novos agentes / skills / MCPs
+      ↓
+Atualização da infraestrutura
+      ↓
+Ecossistema em evolução contínua
+```
+
+> **45 repositórios é o estado atual do ecossistema — não o estado final.**
 
 ---
 
-## ⚡ Quick Start
+# Objetivo
+
+A proposta do projeto é construir uma camada própria e reutilizável de infraestrutura para **IA agentiva**, reduzindo o acoplamento a uma única ferramenta, modelo, framework ou fornecedor.
+
+O ambiente é estruturado para experimentar e integrar diferentes agentes e runtimes, incluindo:
+
+* Claude;
+* Codex;
+* OpenCode;
+* OpenClaw;
+* Hermes;
+* Agentes próprios;
+* Arquiteturas experimentais no estilo **Jarvis**.
+
+A ideia é evoluir de um conjunto de ferramentas isoladas para uma infraestrutura capaz de organizar:
+
+```text
+Agent
+   ↓
+Orchestration
+   ↓
+Skills / Tools
+   ↓
+Memory / Context
+   ↓
+MCP / APIs
+   ↓
+Execution
+   ↓
+Observability / Knowledge
+```
+
+---
+
+# O que este ecossistema reúne
+
+O ambiente atual integra:
+
+* **45 repositórios** como submódulos Git;
+* **1553 skills** para descoberta de capacidades;
+* **10 agentes AIOX** especializados;
+* **3 MCP servers**;
+* memória persistente;
+* Graphify para contexto estrutural;
+* ferramentas de planejamento;
+* ferramentas de engenharia de software;
+* automação;
+* componentes de marketing;
+* componentes de design;
+* ferramentas de pesquisa e análise.
+
+---
+
+# Arquitetura
+
+```text
+                         Claude Skills
+                              │
+             ┌────────────────┼────────────────┐
+             │                │                │
+             ▼                ▼                ▼
+         Skills           AI Agents         MCP Servers
+             │                │                │
+             └────────────────┼────────────────┘
+                              ▼
+                       Orchestration Layer
+                              │
+             ┌────────────────┼────────────────┐
+             ▼                ▼                ▼
+          Memory          Graphify           Tools
+             │                │                │
+             └────────────────┼────────────────┘
+                              ▼
+                     Project Execution
+                              │
+                              ▼
+                     Knowledge / Logs
+```
+
+A arquitetura foi construída para permitir a inclusão, substituição ou evolução de componentes sem reestruturar integralmente o ambiente.
+
+---
+
+# Quick Start
+
+## Clone com todos os submódulos
 
 ```bash
-# Clone com todos os 45 submódulos
 git clone --recurse-submodules https://github.com/Yuri-Fernando/Claude_Skills
 cd Claude_Skills
+```
 
-# Cada submódulo está pronto para usar
-# Veja instruções abaixo
+Caso o repositório já tenha sido clonado sem os submódulos:
+
+```bash
+git submodule update --init --recursive
+```
+
+Para atualizar os componentes:
+
+```bash
+git submodule update --remote --merge
 ```
 
 ---
 
-## 🎯 O Que Tem Aqui
+# Frameworks Core
 
-- **45 Repositórios** — frameworks, tools, skills, agents, MCPs
-- **1553 Skills** — discoverable via `/find-skills` em Claude Code
-- **10 Agentes AIOX** — @dev, @qa, @architect, @pm, @po, @sm, @analyst, @data-engineer, @ux-design, @devops
-- **3 MCP Servers** — GitNexus, OmniRoute, obsidian-master-kit
-- **Memory Persistente** — user.md, decisions.md, preferences.md sincronizados entre dispositivos
-- **Graphify Integration** — 71.5x token economy reduction (20.000 → 280 tokens/session)
-
----
-
-## 📂 45 Repositórios (Submódulos)
-
-### 🏗️ Frameworks Core (6)
-
-| Repo | Descrição | Uso |
-|------|-----------|-----|
-| **aios-core** | AIOX Framework — agentes, tasks, workflows | Arquitetura base para IA agents |
-| **antigravity-kit** | 20+ agentes + 37 skills + 11 workflows patterns | Referência de padrões AIOX |
-| **claude-code-templates** | Templates pré-pronto para projetos | Iniciar novo projeto em 2min |
-| **get-shit-done** | GSD workflow — análise técnica completa | Planning, research, execution |
-| **claude-mem** | Memory system para Claude | Persistência entre sessões |
-| **rtk** | AI orchestration toolkit | Agentes e workflows |
-
-### 🎬 Video Generation (3)
-
-| Repo | Descrição | Uso |
-|------|-----------|-----|
-| **higgsfield-seedance2-jineng** | 15 video generation skills (Seedance 2.0) | `/cinematic`, `/3d-cgi`, `/anime-action`, etc |
-| **remotion** | Programmatic video generation | Criar vídeos via código |
-| **skyreels-v2** | AI video creation | Geração automática de conteúdo |
-
-### 🧠 Code Intelligence (5)
-
-| Repo | Descrição | Uso |
-|------|-----------|-----|
-| **GitNexus** | MCP Server — indexing, graph, análise | `gitnexus index .` para entender arquitetura |
-| **graphify** | Knowledge graph (AST + semantic) | `/graphify . --watch` para grafo persistente |
-| **context7** | Library documentation lookup | Docs de qualquer biblioteca |
-| **everything-claude-code** | Claude Code tips & tricks | Referência de features |
-| **planning-with-files** | File-based planning system | Organizar projetos |
-
-### 👥 Agent Orchestration (4)
-
-| Repo | Descrição | Uso |
-|------|-----------|-----|
-| **pixel-agents** | VS Code extension — visualizar agentes | Typing, reading, waiting states em tempo real |
-| **awesome-agent-skills** | Coleção de skills para agentes | Referência de implementações |
-| **agent-skills-for-context-engineering** | Skills context-aware | Agentes com contexto arquitetural |
-| **agent-skills-context-engineering** | Agent skill patterns | Padrões reusáveis |
-
-### 🌐 AI Infrastructure (4)
-
-| Repo | Descrição | Uso |
-|------|-----------|-----|
-| **OmniRoute** | MCP Server — AI gateway com 100+ providers | Dashboard em http://localhost:3000, fallback automático |
-| **firecrawl-claude-plugin** | Web scraping + crawling | Dados estruturados de qualquer URL |
-| **obsidian-master-kit** | MCP Server — Obsidian setup + sync | `/obsidian-master-kit:init` em 5 minutos |
-| **n8n-mcp** | Workflow automation — MCP server | Integração com n8n |
-
-### 🎓 Skills & Templates (9)
-
-| Repo | Descrição | Uso |
-|------|-----------|-----|
-| **anthropics-skills** | Official skills from Anthropic | Base de referência |
-| **antigravity-awesome-skills** | 37 specialized skills | Encontrar via `/find-skills` |
-| **awesome-claude-skills** | Comunidade: melhores skills | Inspiração e patterns |
-| **awesome-claude-code** | Comunidade: tips Claude Code | Learn best practices |
-| **obsidian-skills** | Skills para Obsidian | Automação em Obsidian |
-| **notebooklm-skill** | NotebookLM integration | Análise de documentos |
-| **trailofbits-skills** | Security & audit skills | Análise de segurança |
-| **marketingskills** | Marketing automation | Growth strategies |
-| **claude-skills** | Coleção de skills | Repository padrão |
-
-### 🔧 Specialized Tools (5)
-
-| Repo | Descrição | Uso |
-|------|-----------|-----|
-| **MiroFish** | Multi-agent prediction + swarm simulation | `upload seed → describe prediction → get simulation` |
-| **OpenSpec** | Spec framework (artifact-guided development) | `/opsx:propose`, `/opsx:apply`, `/opsx:archive` |
-| **refine** | React/Next framework para UI | Building production UIs |
-| **context-mode** | Context-aware operations | Detectar contexto automaticamente |
-| **ui-ux-pro-max-skill** | UX/UI design principles | Design system patterns |
-
-### 📈 Marketing & Growth (5)
-
-| Repo | Descrição | Uso |
-|------|-----------|-----|
-| **ai-marketing-claude** | AI marketing automation | Campaigns, content, strategy |
-| **ai-sales-team-claude** | Sales team orchestration | Outreach, follow-up, closing |
-| **goviralbro** | Viral content generation | Social media optimization |
-| **ralph-claude-code** | Code + marketing integration | Docs + marketing sync |
-| **massgen** | Bulk generation framework | Create at scale |
-
-### 🎨 Design & UX (3)
-
-| Repo | Descrição | Uso |
-|------|-----------|-----|
-| **superpowers** | Design system framework | UI components + tokens |
-| **superpowers-marketplace** | Design marketplace | Browse, download, customize |
-| **ui-ux-pro-max-skill** | Design skill library | UX patterns + best practices |
-
-### 🌟 Misc (1)
-
-| Repo | Descrição | Uso |
-|------|-----------|-----|
-| **xquads-squads** | Squad orchestration | Team coordination patterns |
+| Repositório               | Descrição                                   | Uso                             |
+| ------------------------- | ------------------------------------------- | ------------------------------- |
+| **aios-core**             | AIOX Framework — agentes, tasks e workflows | Arquitetura base para agentes   |
+| **antigravity-kit**       | Agentes, skills e workflow patterns         | Referência arquitetural         |
+| **claude-code-templates** | Templates para projetos                     | Inicialização de projetos       |
+| **get-shit-done**         | Workflow de planejamento e execução         | Planning / Research / Execution |
+| **claude-mem**            | Sistema de memória para Claude              | Persistência entre sessões      |
+| **rtk**                   | AI orchestration toolkit                    | Agentes e workflows             |
 
 ---
 
-## 🚀 Como Usar
+# Video Generation
 
-### 1. **Descobrir Skills Corretas**
+| Repositório                     | Descrição                     | Uso                 |
+| ------------------------------- | ----------------------------- | ------------------- |
+| **higgsfield-seedance2-jineng** | Skills para geração de vídeo  | Criação audiovisual |
+| **remotion**                    | Geração programática de vídeo | Vídeo via código    |
+| **skyreels-v2**                 | AI video creation             | Geração de conteúdo |
 
-```bash
-# Em qualquer projeto com .claude/
+---
+
+# Code Intelligence
+
+| Repositório                | Descrição                                  | Uso                       |
+| -------------------------- | ------------------------------------------ | ------------------------- |
+| **GitNexus**               | MCP para indexing e graph analysis         | Entendimento arquitetural |
+| **graphify**               | Knowledge graph baseado em AST + semântica | Contexto persistente      |
+| **context7**               | Consulta de documentação                   | Library knowledge         |
+| **everything-claude-code** | Patterns e boas práticas                   | Referência Claude Code    |
+| **planning-with-files**    | Planejamento baseado em arquivos           | Organização de projetos   |
+
+---
+
+# Agent Orchestration
+
+| Repositório                              | Descrição                          | Uso                    |
+| ---------------------------------------- | ---------------------------------- | ---------------------- |
+| **pixel-agents**                         | Visualização de agentes no VS Code | Estados de execução    |
+| **awesome-agent-skills**                 | Coleção de skills                  | Referência             |
+| **agent-skills-for-context-engineering** | Skills context-aware               | Engenharia de contexto |
+| **agent-skills-context-engineering**     | Padrões reutilizáveis              | Agent Context Patterns |
+
+---
+
+# AI Infrastructure
+
+| Repositório                 | Descrição               | Uso                    |
+| --------------------------- | ----------------------- | ---------------------- |
+| **OmniRoute**               | MCP Server / AI Gateway | Multi-provider routing |
+| **firecrawl-claude-plugin** | Web crawling            | Coleta de dados        |
+| **obsidian-master-kit**     | MCP + Obsidian          | Knowledge management   |
+| **n8n-mcp**                 | MCP para automação n8n  | Workflow integration   |
+
+---
+
+# Skills & Templates
+
+| Repositório                    | Descrição                    | Uso                 |
+| ------------------------------ | ---------------------------- | ------------------- |
+| **anthropics-skills**          | Skills oficiais da Anthropic | Referência          |
+| **antigravity-awesome-skills** | Skills especializadas        | Discovery           |
+| **awesome-claude-skills**      | Skills da comunidade         | Patterns            |
+| **awesome-claude-code**        | Recursos Claude Code         | Best practices      |
+| **obsidian-skills**            | Skills para Obsidian         | Automação           |
+| **notebooklm-skill**           | Integração NotebookLM        | Análise documental  |
+| **trailofbits-skills**         | Security / Audit skills      | Segurança           |
+| **marketingskills**            | Marketing automation         | Growth              |
+| **claude-skills**              | Coleção de skills            | Base do ecossistema |
+
+---
+
+# Specialized Tools
+
+| Repositório             | Descrição                                 | Uso                      |
+| ----------------------- | ----------------------------------------- | ------------------------ |
+| **MiroFish**            | Multi-agent prediction + swarm simulation | Simulações               |
+| **OpenSpec**            | Spec-driven development                   | Planejamento e execução  |
+| **refine**              | Framework React/Next                      | Construção de interfaces |
+| **context-mode**        | Operações context-aware                   | Context management       |
+| **ui-ux-pro-max-skill** | Skills de UI/UX                           | Design system            |
+
+---
+
+# Marketing & Growth
+
+| Repositório              | Descrição                     | Uso                  |
+| ------------------------ | ----------------------------- | -------------------- |
+| **ai-marketing-claude**  | Automação de marketing        | Campaigns / Content  |
+| **ai-sales-team-claude** | Orquestração de vendas        | Outreach / Follow-up |
+| **goviralbro**           | Geração de conteúdo viral     | Social Media         |
+| **ralph-claude-code**    | Integração código + marketing | Sync                 |
+| **massgen**              | Geração em escala             | Bulk generation      |
+
+---
+
+# Design & UX
+
+| Repositório                 | Descrição               | Uso                |
+| --------------------------- | ----------------------- | ------------------ |
+| **superpowers**             | Design system framework | UI components      |
+| **superpowers-marketplace** | Marketplace             | Browse / Customize |
+| **ui-ux-pro-max-skill**     | Biblioteca de design    | UX patterns        |
+
+---
+
+# Misc
+
+| Repositório       | Descrição           | Uso               |
+| ----------------- | ------------------- | ----------------- |
+| **xquads-squads** | Squad orchestration | Team coordination |
+
+---
+
+# Skills Discovery
+
+Uma das principais funções do ecossistema é permitir descoberta de capacidades de acordo com a tarefa.
+
+```text
 /find-skills "sua tarefa aqui"
-→ Mostra 10+ skills com relevância score
+```
 
-# Se nenhuma atender:
+Esse fluxo permite procurar skills relevantes antes da implementação.
+
+Caso nenhuma capacidade existente atenda ao problema:
+
+```text
 /skill-forge "preciso de [capacidade]"
-→ Cria nova skill automaticamente
 ```
 
-### 2. **Usar Agentes AIOX**
+A proposta é tratar **capability discovery** como parte do processo de engenharia.
 
-```bash
-@dev           # Implementação de código
-@qa            # Testes e validação  
-@architect     # Design técnico
-@pm            # Product management
-@po            # Product owner
-@sm            # Scrum master
-@analyst       # Pesquisa
-@data-engineer # Banco de dados
-@ux-design     # UX/UI design
-@devops        # CI/CD, git push (exclusivo)
+---
 
-# Ativar com:
-@dev *help     # Ver comandos do agente
-@dev *task {nome}  # Executar task específica
+# Agentes AIOX
+
+O ambiente possui 10 agentes especializados:
+
+```text
+@dev
+@qa
+@architect
+@pm
+@po
+@sm
+@analyst
+@data-engineer
+@ux-design
+@devops
 ```
 
-### 3. **Usar MCP Servers**
+Exemplos:
+
+```text
+@dev *help
+```
+
+```text
+@dev *task {nome}
+```
+
+Cada agente possui responsabilidades específicas dentro do fluxo de desenvolvimento.
+
+---
+
+# MCP Servers
+
+O ecossistema atual integra três MCP servers principais.
+
+## GitNexus
+
+Indexação e entendimento estrutural do projeto:
 
 ```bash
-# GitNexus — entender arquitetura
 gitnexus index .
 gitnexus serve
+```
 
-# OmniRoute — AI gateway
+---
+
+## OmniRoute
+
+Gateway para múltiplos provedores de IA:
+
+```bash
 omniroute start
-# Dashboard: http://localhost:3000
+```
 
-# Obsidian Master Kit — setup
+Dashboard:
+
+```text
+http://localhost:3000
+```
+
+---
+
+## Obsidian Master Kit
+
+Inicialização:
+
+```text
 /obsidian-master-kit:init
+```
+
+Sincronização:
+
+```text
 /obsidian-master-kit:sync
 ```
 
-### 4. **Integrar em Novo Projeto**
+---
+
+# Integração em Novos Projetos
+
+A infraestrutura pode ser incorporada a um novo projeto pela camada `.claude`:
 
 ```bash
-# Copie .claude/ para seu projeto
 cp -r Claude_Skills/.claude/ seu-projeto/.claude/
-
-# Customize config.yaml
-# Pronto! Tem acesso a:
-# - 1553 skills
-# - 10 agentes
-# - Memory persistente
-# - Graphify (71.5x menos tokens!)
 ```
 
-### 5. **Memory Persistente**
+Depois, o projeto pode utilizar as capacidades configuradas pelo ecossistema.
 
-Seus projetos têm acesso automático a:
+Exemplo:
 
+```text
+seu-projeto/
+└── .claude/
+    ├── skills/
+    ├── agents/
+    ├── memory/
+    └── config/
 ```
+
+---
+
+# Memory Persistente
+
+O ambiente possui uma camada de memória persistente para manter informações relevantes entre sessões e projetos.
+
+Estrutura:
+
+```text
 G:\Claude\memory\
-├── user.md (perfil + contexto)
-├── decisions.md (decisões técnicas +30d review)
-├── preferences.md (feedback + regras)
-└── Obsidian Vault/ (sincronizado bidirecional)
+├── user.md
+├── decisions.md
+├── preferences.md
+└── Obsidian Vault/
 ```
 
-**Sincronização automática:**
-- File layer: memory/user.md, decisions.md
-- Vault layer: Obsidian bi-directional sync
-- Cloud layer: MongoDB + Supabase
+### Camadas de persistência
 
----
-
-## 📚 Documentação Completa
-
-- **[INSTALLATION.md](INSTALLATION.md)** — Setup passo-a-passo
-- **[MASTER-INDEX.md](MASTER-INDEX.md)** — Todas as 45 repos com descrições detalhadas
-- **[MCP-SERVERS.md](MCP-SERVERS.md)** — GitNexus, OmniRoute, obsidian-master-kit
-- **[SKILLS-REFERENCE.md](SKILLS-REFERENCE.md)** — Índice das 1553 skills por categoria
-
----
-
-## 💡 Token Economy: Graphify
-
-Redução de **71.5x tokens** por sessão:
-
-```
-❌ SEM SYSTEM:
-   10 sessões/dia × 20.000 tokens = 200.000 tokens
-   Custo/mês: ~$18
-
-✅ COM SYSTEM:
-   Sessão 1: 20.000 tokens (construir graph uma vez)
-   Sessões 2-10: 280 tokens cada (consultar graph)
-   10 sessões/dia = 21.100 + (9 × 1.380) = 33.520 tokens
-   Custo/mês: ~$3
-   
-   ECONOMIA: 83% menos tokens
-   APÓS 1 MÊS: ~135.000 tokens total (44.4x menos!)
+```text
+File Layer
+     ↓
+Vault Layer
+     ↓
+Cloud Layer
 ```
 
-Como funciona:
-1. Memory auto-load (user.md + decisions.md) = 1.100 tokens
-2. Graphify consulta graph.json = 280 tokens
-3. Total sessão: 270 tokens (vs 20.000 sem sistema!)
+Cloud:
 
----
-
-## 🔄 Fluxo Típico
-
-```
-1. Novo projeto? 
-   → cp -r .claude/ seu-projeto/.claude/
-
-2. Nova tarefa?
-   → /find-skills "sua tarefa"
-   → Seleciona skill correta
-   → @dev implementa
-   → @qa testa
-   → @devops push
-
-3. Decisão importante?
-   → Salva em memory/decisions.md
-   → Sync automático para Obsidian + MongoDB
-   → Próximo projeto herda conhecimento
+```text
+MongoDB + Supabase
 ```
 
----
+### Conteúdo persistido
 
-## 📊 Status
-
-| Componente | Versão | Status |
-|-----------|--------|--------|
-| 45 Repos | ✅ | Todos como submódulos |
-| 1553 Skills | ✅ | `/find-skills` discovery |
-| 10 Agentes | ✅ | @agent-name activation |
-| 3 MCPs | ✅ | GitNexus, OmniRoute, obsidian-master-kit |
-| Memory | ✅ | 4-layer sync (file, vault, cloud) |
-| Graphify | ✅ | 71.5x token reduction |
+* Perfil;
+* Contexto;
+* Decisões técnicas;
+* Preferências;
+* Regras;
+* Feedback;
+* Conhecimento de projeto.
 
 ---
 
-## 📝 License
+# Graphify
 
-Composite repository — cada submódulo retém sua própria license.
+O **Graphify** adiciona uma camada de conhecimento estrutural ao ambiente utilizando:
+
+* AST;
+* relações entre arquivos;
+* relações semânticas;
+* contexto arquitetural.
+
+### Fluxo
+
+```text
+Codebase
+   ↓
+AST + Semantic Analysis
+   ↓
+Knowledge Graph
+   ↓
+Relevant Context
+   ↓
+Agent
+```
+
+O projeto registra uma redução de **71,5× no volume de tokens consultados por sessão**, de acordo com o cenário descrito na implementação.
+
+O objetivo é reduzir a quantidade de contexto bruto necessária para que um agente compreenda a estrutura relevante de um projeto.
 
 ---
 
-**Versão:** 1.0  
-**Data:** 2026-04-22  
-**Tipo:** 45 repos + 1553 skills + 10 agentes + memory persistente
+# Fluxo Típico
 
-*Synkra AIOX + Graphify + Obsidian Master Kit*
+```text
+1. Novo projeto
+        ↓
+2. Adicionar .claude/
+        ↓
+3. /find-skills
+        ↓
+4. Selecionar capacidades
+        ↓
+5. @architect
+        ↓
+6. @dev
+        ↓
+7. @qa
+        ↓
+8. @devops
+        ↓
+9. Memory / Decisions
+        ↓
+10. Graphify / Knowledge
+```
+
+A proposta é fazer com que o agente participe de etapas como:
+
+* planejamento;
+* implementação;
+* validação;
+* documentação;
+* memória;
+* manutenção;
+* entendimento arquitetural.
+
+---
+
+# Infraestrutura Independente de Fornecedor
+
+Um dos princípios centrais desta linha de P&D é evitar dependência rígida de uma única empresa, modelo ou plataforma.
+
+A infraestrutura é projetada para permitir experimentação com diferentes ambientes:
+
+```text
+Claude
+Codex
+OpenCode
+OpenClaw
+Hermes
+Jarvis / Agents próprios
+        ↓
+┌────────────────────────────────┐
+│   Agentic AI Infrastructure     │
+├────────────────────────────────┤
+│ Skills                         │
+│ Agents                         │
+│ MCP                            │
+│ Memory                         │
+│ Context                        │
+│ Graph                          │
+│ Tools                          │
+│ Orchestration                  │
+└────────────────────────────────┘
+```
+
+A ideia é construir componentes reutilizáveis que possam ser integrados a diferentes agentes, modelos e runtimes.
+
+---
+
+# O que este projeto demonstra
+
+* Engenharia de infraestrutura para IA agentiva;
+* Arquitetura modular;
+* Orquestração de agentes;
+* Engenharia de contexto;
+* Sistemas de memória persistente;
+* Knowledge Graphs;
+* MCP;
+* Tool integration;
+* Workflow orchestration;
+* Provider-agnostic architecture;
+* Integração entre agentes e ferramentas;
+* Desenvolvimento assistido por IA;
+* Organização de ecossistemas Git;
+* Automação de workflows de engenharia;
+* Experimentação com diferentes runtimes.
+
+---
+
+# Estrutura Geral
+
+```text
+Claude_Skills/
+│
+├── .claude/
+│   ├── agents/
+│   ├── skills/
+│   ├── memory/
+│   └── config/
+│
+├── submodules/
+│   ├── aios-core/
+│   ├── claude-mem/
+│   ├── GitNexus/
+│   ├── graphify/
+│   ├── OmniRoute/
+│   ├── obsidian-master-kit/
+│   └── ...
+│
+├── INSTALLATION.md
+├── MASTER-INDEX.md
+├── MCP-SERVERS.md
+├── SKILLS-REFERENCE.md
+└── README.md
+```
+
+---
+
+# Documentação
+
+* **[INSTALLATION.md](INSTALLATION.md)** — Setup e configuração;
+* **[MASTER-INDEX.md](MASTER-INDEX.md)** — Índice dos repositórios;
+* **[MCP-SERVERS.md](MCP-SERVERS.md)** — MCP servers integrados;
+* **[SKILLS-REFERENCE.md](SKILLS-REFERENCE.md)** — Índice das skills.
+
+---
+
+# Status Atual do Ecossistema
+
+| Componente                  | Estado        |
+| --------------------------- | ------------- |
+| **45 Repositórios**         | ✅ Integrados  |
+| **1553 Skills**             | ✅ Disponíveis |
+| **10 Agentes AIOX**         | ✅ Integrados  |
+| **3 MCP Servers**           | ✅ Integrados  |
+| **Memory Persistente**      | ✅ Ativa       |
+| **Graphify**                | ✅ Integrado   |
+| **Expansão do ecossistema** | 🔄 Contínua   |
+
+### Evolução contínua
+
+```text
+45 Repos atuais
+      ↓
+Avaliação de novas ferramentas
+      ↓
+Integração de novos componentes
+      ↓
+Novos agentes / skills / MCPs
+      ↓
+Atualização da infraestrutura
+      ↓
+Novo estado do ecossistema
+      ↓
+Repetição contínua
+```
+
+> **45 repositórios representam o estado atual do ecossistema, não o estado final.**
+
+O conjunto é tratado como um **laboratório vivo de Agentic AI**, no qual novos componentes podem ser incorporados, substituídos ou reorganizados continuamente.
+
+---
+
+# Roadmap de P&D
+
+A evolução do ecossistema está concentrada em:
+
+* Maior abstração entre agentes e providers;
+* Runtimes independentes;
+* Orquestração entre agentes heterogêneos;
+* Evolução da memória persistente;
+* Knowledge Graphs mais completos;
+* Avaliação automática de agentes;
+* Observabilidade de workflows agentivos;
+* Agent-to-Agent communication;
+* Execução local-first;
+* Infraestrutura para agentes próprios;
+* Novas integrações conforme o ecossistema evolui.
+
+A direção é evoluir de um conjunto integrado de ferramentas para uma **infraestrutura modular própria para Agentic AI**.
+
+---
+
+# Licença
+
+**Composite repository**
+
+Cada submódulo mantém sua própria licença e seus próprios termos de uso.
+
+Consulte o repositório correspondente antes de redistribuir ou incorporar qualquer componente.
+
+---
+
+# Autor
+
+**Yuri Fernando Dubbern**
+
+AI/ML Engineer · Generative AI · AI Agents · Data Engineering · Intelligent Automation
+
+[LinkedIn](https://www.linkedin.com/in/yuridubbern) · [GitHub](https://github.com/Yuri-Fernando) · [Lattes](http://lattes.cnpq.br/7151392692642166) · [Linktree](https://linktr.ee/yuri.f.dubbern)
+
+---
+
+> **Este repositório faz parte de uma linha contínua de P&D em infraestrutura para IA agentiva.**
+>
+> O objetivo é construir uma camada própria de **skills, agentes, memória, contexto, ferramentas e orquestração**, capaz de evoluir continuamente e permanecer independente de um único fornecedor de IA.

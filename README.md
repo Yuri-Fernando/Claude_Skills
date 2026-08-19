@@ -1,4 +1,4 @@
-# Claude Skills — Ecossistema Jarvis
+# Claude Skills — Ecossistema Jarvis - Hermes, Claw
 
 ### Infraestrutura modular e em evolução contínua para desenvolvimento com IA agentiva
 
@@ -6,57 +6,17 @@
 
 🔵 **Pesquisa / P&D — Ecossistema ativo e em evolução contínua**
 
-O **Claude Skills — Ecossistema Jarvis** é uma infraestrutura experimental para desenvolvimento assistido por IA, reunindo **skills, agentes, MCP servers, sistemas de memória, ferramentas de contexto, workflows e componentes de automação** em uma arquitetura modular baseada em Git e submódulos.
+O **Claude Skills — Ecossistema Jarvis** é uma infraestrutura experimental para desenvolvimento assistido por IA, reunindo **skills, agentes, MCP servers, memória, contexto, ferramentas, workflows e automação** em uma arquitetura modular baseada em Git e submódulos.
 
-Atualmente, o ecossistema integra **45 repositórios**, organizados como componentes reutilizáveis para desenvolvimento com IA agentiva.
+Atualmente, o ecossistema integra **45 repositórios**, organizados como componentes reutilizáveis para desenvolvimento com IA agentiva. Esse número não representa um estado final: novos frameworks, ferramentas, agentes, runtimes, MCP servers e capacidades são continuamente estudados, avaliados e incorporados conforme novas necessidades e experimentos surgem. :contentReference[oaicite:0]{index=0}
 
-Esse número **não é fixo**. Novos repositórios, ferramentas, frameworks, agentes, MCP servers e capacidades são continuamente avaliados e incorporados conforme novas necessidades, experimentos e oportunidades de integração surgem.
-
-### Estado atual
-
-| Componente                  | Estado atual                 |
-| --------------------------- | ---------------------------- |
-| **45 Repositórios**         | ✅ Integrados                 |
-| **1553 Skills**             | ✅ Disponíveis para discovery |
-| **10 Agentes AIOX**         | ✅ Integrados                 |
-| **3 MCP Servers**           | ✅ Integrados                 |
-| **Memory Persistente**      | ✅ Ativo                      |
-| **Graphify**                | ✅ Integrado                  |
-| **Expansão do ecossistema** | 🔄 Contínua                  |
-
-```text
-45 Repos atuais
-      ↓
-Avaliação de novas ferramentas
-      ↓
-Integração de novos componentes
-      ↓
-Novos agentes / skills / MCPs
-      ↓
-Atualização da infraestrutura
-      ↓
-Ecossistema em evolução contínua
-```
-
-> **45 repositórios é o estado atual do ecossistema — não o estado final.**
+O princípio central do projeto é construir uma **infraestrutura própria e independente de fornecedor**, capaz de integrar diferentes agentes e runtimes — incluindo **Claude, Codex, OpenCode, OpenClaw, Hermes e agentes próprios** — sem depender rigidamente de uma única empresa, modelo ou plataforma. :contentReference[oaicite:1]{index=1}
 
 ---
 
 # Objetivo
 
-A proposta do projeto é construir uma camada própria e reutilizável de infraestrutura para **IA agentiva**, reduzindo o acoplamento a uma única ferramenta, modelo, framework ou fornecedor.
-
-O ambiente é estruturado para experimentar e integrar diferentes agentes e runtimes, incluindo:
-
-* Claude;
-* Codex;
-* OpenCode;
-* OpenClaw;
-* Hermes;
-* Agentes próprios;
-* Arquiteturas experimentais no estilo **Jarvis**.
-
-A ideia é evoluir de um conjunto de ferramentas isoladas para uma infraestrutura capaz de organizar:
+A proposta do ecossistema é construir uma camada própria e reutilizável para **Agentic AI**, capaz de organizar:
 
 ```text
 Agent
@@ -74,218 +34,336 @@ Execution
 Observability / Knowledge
 ```
 
----
-
-# O que este ecossistema reúne
-
-O ambiente atual integra:
-
-* **45 repositórios** como submódulos Git;
-* **1553 skills** para descoberta de capacidades;
-* **10 agentes AIOX** especializados;
-* **3 MCP servers**;
-* memória persistente;
-* Graphify para contexto estrutural;
-* ferramentas de planejamento;
-* ferramentas de engenharia de software;
-* automação;
-* componentes de marketing;
-* componentes de design;
-* ferramentas de pesquisa e análise.
+A infraestrutura já reúne **skills, agentes, MCP servers, memória persistente, Graphify, ferramentas de planejamento, engenharia de software, automação, marketing, design e pesquisa**. :contentReference[oaicite:2]{index=2}
 
 ---
 
-# Arquitetura
+# Pesquisa e Desenvolvimento Contínuos
+
+Este projeto é tratado como um **laboratório vivo de Agentic AI**.
+
+A arquitetura está permanentemente em estudo, sendo modificada e ampliada para testar diferentes maneiras de:
+
+- Orquestrar agentes;
+- Integrar runtimes;
+- Executar IA local;
+- Conectar ferramentas;
+- Automatizar projetos;
+- Compartilhar contexto;
+- Integrar memória;
+- Distribuir tarefas;
+- Coordenar ambientes heterogêneos;
+- Construir infraestrutura independente de fornecedor.
+
+O objetivo não é simplesmente reunir ferramentas, mas estudar como essas ferramentas podem **trabalhar juntas em um sistema maior e coordenado**.
+
+---
+
+# Runtimes e Agentes em Estudo
+
+A infraestrutura é projetada para experimentar diferentes ambientes de IA:
 
 ```text
-                         Claude Skills
-                              │
-             ┌────────────────┼────────────────┐
-             │                │                │
-             ▼                ▼                ▼
-         Skills           AI Agents         MCP Servers
-             │                │                │
-             └────────────────┼────────────────┘
-                              ▼
-                       Orchestration Layer
-                              │
-             ┌────────────────┼────────────────┐
-             ▼                ▼                ▼
-          Memory          Graphify           Tools
-             │                │                │
-             └────────────────┼────────────────┘
-                              ▼
-                     Project Execution
-                              │
-                              ▼
-                     Knowledge / Logs
+Claude
+Codex
+OpenCode
+OpenClaw
+Hermes
+Agentes Próprios
+Jarvis / Arquiteturas Proprietárias
+        ↓
+Agentic AI Infrastructure
 ```
 
-A arquitetura foi construída para permitir a inclusão, substituição ou evolução de componentes sem reestruturar integralmente o ambiente.
+A proposta é permitir que cada runtime possa contribuir com suas próprias capacidades, mantendo uma camada comum de:
+
+- Skills;
+- Agents;
+- Memory;
+- Context;
+- Tools;
+- MCP;
+- Orchestration;
+- Execution.
+
+Essa abordagem já faz parte da arquitetura atual do ecossistema. :contentReference[oaicite:3]{index=3}
 
 ---
 
-# Quick Start
+# Infraestrutura Local, VPS e Edge AI
 
-## Clone com todos os submódulos
+Uma das linhas atuais de P&D é estudar diferentes formas de execução da infraestrutura agentiva.
 
-```bash
-git clone --recurse-submodules https://github.com/Yuri-Fernando/Claude_Skills
-cd Claude_Skills
-```
+### Ambientes pesquisados
 
-Caso o repositório já tenha sido clonado sem os submódulos:
+- **Windows local**;
+- **VPS / servidores remotos**;
+- **Mac Mini**;
+- Ambientes on-premise;
+- Execução híbrida;
+- IA local;
+- Modelos nativos;
+- Serviços cloud.
 
-```bash
-git submodule update --init --recursive
-```
-
-Para atualizar os componentes:
-
-```bash
-git submodule update --remote --merge
-```
-
----
-
-# Frameworks Core
-
-| Repositório               | Descrição                                   | Uso                             |
-| ------------------------- | ------------------------------------------- | ------------------------------- |
-| **aios-core**             | AIOX Framework — agentes, tasks e workflows | Arquitetura base para agentes   |
-| **antigravity-kit**       | Agentes, skills e workflow patterns         | Referência arquitetural         |
-| **claude-code-templates** | Templates para projetos                     | Inicialização de projetos       |
-| **get-shit-done**         | Workflow de planejamento e execução         | Planning / Research / Execution |
-| **claude-mem**            | Sistema de memória para Claude              | Persistência entre sessões      |
-| **rtk**                   | AI orchestration toolkit                    | Agentes e workflows             |
-
----
-
-# Video Generation
-
-| Repositório                     | Descrição                     | Uso                 |
-| ------------------------------- | ----------------------------- | ------------------- |
-| **higgsfield-seedance2-jineng** | Skills para geração de vídeo  | Criação audiovisual |
-| **remotion**                    | Geração programática de vídeo | Vídeo via código    |
-| **skyreels-v2**                 | AI video creation             | Geração de conteúdo |
-
----
-
-# Code Intelligence
-
-| Repositório                | Descrição                                  | Uso                       |
-| -------------------------- | ------------------------------------------ | ------------------------- |
-| **GitNexus**               | MCP para indexing e graph analysis         | Entendimento arquitetural |
-| **graphify**               | Knowledge graph baseado em AST + semântica | Contexto persistente      |
-| **context7**               | Consulta de documentação                   | Library knowledge         |
-| **everything-claude-code** | Patterns e boas práticas                   | Referência Claude Code    |
-| **planning-with-files**    | Planejamento baseado em arquivos           | Organização de projetos   |
-
----
-
-# Agent Orchestration
-
-| Repositório                              | Descrição                          | Uso                    |
-| ---------------------------------------- | ---------------------------------- | ---------------------- |
-| **pixel-agents**                         | Visualização de agentes no VS Code | Estados de execução    |
-| **awesome-agent-skills**                 | Coleção de skills                  | Referência             |
-| **agent-skills-for-context-engineering** | Skills context-aware               | Engenharia de contexto |
-| **agent-skills-context-engineering**     | Padrões reutilizáveis              | Agent Context Patterns |
-
----
-
-# AI Infrastructure
-
-| Repositório                 | Descrição               | Uso                    |
-| --------------------------- | ----------------------- | ---------------------- |
-| **OmniRoute**               | MCP Server / AI Gateway | Multi-provider routing |
-| **firecrawl-claude-plugin** | Web crawling            | Coleta de dados        |
-| **obsidian-master-kit**     | MCP + Obsidian          | Knowledge management   |
-| **n8n-mcp**                 | MCP para automação n8n  | Workflow integration   |
-
----
-
-# Skills & Templates
-
-| Repositório                    | Descrição                    | Uso                 |
-| ------------------------------ | ---------------------------- | ------------------- |
-| **anthropics-skills**          | Skills oficiais da Anthropic | Referência          |
-| **antigravity-awesome-skills** | Skills especializadas        | Discovery           |
-| **awesome-claude-skills**      | Skills da comunidade         | Patterns            |
-| **awesome-claude-code**        | Recursos Claude Code         | Best practices      |
-| **obsidian-skills**            | Skills para Obsidian         | Automação           |
-| **notebooklm-skill**           | Integração NotebookLM        | Análise documental  |
-| **trailofbits-skills**         | Security / Audit skills      | Segurança           |
-| **marketingskills**            | Marketing automation         | Growth              |
-| **claude-skills**              | Coleção de skills            | Base do ecossistema |
-
----
-
-# Specialized Tools
-
-| Repositório             | Descrição                                 | Uso                      |
-| ----------------------- | ----------------------------------------- | ------------------------ |
-| **MiroFish**            | Multi-agent prediction + swarm simulation | Simulações               |
-| **OpenSpec**            | Spec-driven development                   | Planejamento e execução  |
-| **refine**              | Framework React/Next                      | Construção de interfaces |
-| **context-mode**        | Operações context-aware                   | Context management       |
-| **ui-ux-pro-max-skill** | Skills de UI/UX                           | Design system            |
-
----
-
-# Marketing & Growth
-
-| Repositório              | Descrição                     | Uso                  |
-| ------------------------ | ----------------------------- | -------------------- |
-| **ai-marketing-claude**  | Automação de marketing        | Campaigns / Content  |
-| **ai-sales-team-claude** | Orquestração de vendas        | Outreach / Follow-up |
-| **goviralbro**           | Geração de conteúdo viral     | Social Media         |
-| **ralph-claude-code**    | Integração código + marketing | Sync                 |
-| **massgen**              | Geração em escala             | Bulk generation      |
-
----
-
-# Design & UX
-
-| Repositório                 | Descrição               | Uso                |
-| --------------------------- | ----------------------- | ------------------ |
-| **superpowers**             | Design system framework | UI components      |
-| **superpowers-marketplace** | Marketplace             | Browse / Customize |
-| **ui-ux-pro-max-skill**     | Biblioteca de design    | UX patterns        |
-
----
-
-# Misc
-
-| Repositório       | Descrição           | Uso               |
-| ----------------- | ------------------- | ----------------- |
-| **xquads-squads** | Squad orchestration | Team coordination |
-
----
-
-# Skills Discovery
-
-Uma das principais funções do ecossistema é permitir descoberta de capacidades de acordo com a tarefa.
+A ideia é descobrir a melhor distribuição entre:
 
 ```text
-/find-skills "sua tarefa aqui"
+Local
+   +
+VPS
+   +
+Mac Mini
+   +
+Cloud
+   +
+IA Local
+   +
+IA Cloud
 ```
 
-Esse fluxo permite procurar skills relevantes antes da implementação.
-
-Caso nenhuma capacidade existente atenda ao problema:
-
-```text
-/skill-forge "preciso de [capacidade]"
-```
-
-A proposta é tratar **capability discovery** como parte do processo de engenharia.
+dependendo do tipo de tarefa, custo, privacidade, latência e capacidade computacional necessária.
 
 ---
 
-# Agentes AIOX
+# OpenClaw e Hermes
 
-O ambiente possui 10 agentes especializados:
+O ecossistema está estudando especialmente a integração de runtimes como **OpenClaw e Hermes**, inclusive em diferentes ambientes de execução.
+
+Essa pesquisa inclui:
+
+- Execução local;
+- Execução em Windows;
+- Execução em servidores;
+- Integração com automações;
+- Coordenação entre agentes;
+- Uso combinado com outras ferramentas;
+- Experimentação de runtimes independentes.
+
+O objetivo é avaliar como diferentes runtimes podem atuar dentro de uma arquitetura maior, em vez de ficarem isolados.
+
+---
+
+# Mac Mini como Nó de Automação
+
+Outra linha de pesquisa é a utilização de um **Mac Mini como nó dedicado de automação e execução de IA**.
+
+A ideia é explorar uma arquitetura na qual o Mac Mini possa atuar como um componente especializado para:
+
+```text
+JARVIS / Orchestrator
+        ↓
+Mac Mini
+        ↓
+IA Local / Native Apps
+        ↓
+Automations
+        ↓
+External Systems
+```
+
+Essa abordagem pode permitir executar aplicações e capacidades específicas de forma local, mantendo o restante da infraestrutura distribuído.
+
+O estudo considera o Mac Mini como uma possível **camada de execução dedicada** dentro do ecossistema.
+
+---
+
+# IA Local e Modelos Nativos
+
+Uma das linhas centrais da P&D é reduzir a dependência de serviços externos sempre que fizer sentido.
+
+A infraestrutura está sendo construída para permitir a experimentação com:
+
+- LLMs locais;
+- Modelos on-premise;
+- Modelos nativos;
+- Runtimes locais;
+- Inferência local;
+- Gateways multi-provider;
+- Roteamento entre modelos.
+
+Objetivos:
+
+- Privacidade;
+- Controle;
+- Menor dependência de fornecedores;
+- Redução de latência em determinados cenários;
+- Experimentação com arquiteturas locais;
+- Maior autonomia da infraestrutura.
+
+---
+
+# Arquitetura Híbrida
+
+A visão de execução é híbrida:
+
+```text
+                    JARVIS / Core
+                          │
+          ┌───────────────┼────────────────┐
+          │               │                │
+          ▼               ▼                ▼
+       Windows           VPS            Mac Mini
+          │               │                │
+          ▼               ▼                ▼
+     Local AI         Services        Native AI
+          │               │                │
+          └───────────────┼────────────────┘
+                          ▼
+                    Orchestration
+                          │
+                          ▼
+                  External Systems
+```
+
+Cada ambiente pode assumir responsabilidades diferentes, enquanto o núcleo mantém a coordenação.
+
+---
+
+# Automação de Sistemas
+
+Uma das metas da pesquisa é transformar a infraestrutura em uma **camada central de automação**, capaz de coordenar:
+
+- Projetos;
+- Código;
+- Documentos;
+- Sistemas;
+- APIs;
+- Workflows;
+- Agentes;
+- Ferramentas;
+- Processos empresariais.
+
+O sistema busca evoluir de:
+
+```text
+Automation
+   ↓
+Workflow
+   ↓
+Agent
+   ↓
+Orchestrated Agent
+   ↓
+Autonomous System
+```
+
+---
+
+# Integração com n8n
+
+O **n8n** faz parte da camada de automação do ecossistema e é utilizado para conectar agentes e workflows a diferentes serviços.
+
+A arquitetura permite:
+
+```text
+Agent
+   ↓
+n8n
+   ↓
+Workflow
+   ↓
+API / CRM / Database / Service
+   ↓
+Execution
+```
+
+O n8n atua como camada visual de execução e integração, enquanto a camada agentiva pode decidir o que deve ser executado.
+
+O ecossistema já possui inclusive integração experimental relacionada a `n8n-mcp` para conexão entre agentes e workflows. :contentReference[oaicite:4]{index=4}
+
+---
+
+# Integração de Projetos
+
+Uma das principais metas é utilizar esta infraestrutura como uma camada de conexão entre os diferentes projetos desenvolvidos no ecossistema.
+
+A visão é:
+
+```text
+Projeto A
+Projeto B
+Projeto C
+Projeto D
+Projeto SaaS
+Projeto de Pesquisa
+      ↓
+   Context Layer
+      ↓
+   Agent Layer
+      ↓
+   Orchestration
+      ↓
+      JARVIS
+```
+
+Assim, os projetos deixam de ser apenas repositórios independentes e passam a funcionar como **componentes de um ecossistema maior de IA e automação**.
+
+---
+
+# Memória Persistente
+
+O sistema possui uma camada de memória persistente para manter:
+
+- Perfil;
+- Contexto;
+- Decisões técnicas;
+- Preferências;
+- Regras;
+- Feedback;
+- Conhecimento de projeto.
+
+A arquitetura atual utiliza diferentes camadas de persistência:
+
+```text
+File Layer
+   ↓
+Vault Layer
+   ↓
+Cloud Layer
+```
+
+com componentes como:
+
+```text
+MongoDB
+Supabase
+Obsidian
+```
+
+Essa camada permite transportar contexto entre sessões e projetos. :contentReference[oaicite:5]{index=5}
+
+---
+
+# Graphify e Context Engineering
+
+O **Graphify** adiciona uma camada de conhecimento estrutural baseada em:
+
+- AST;
+- Relações entre arquivos;
+- Relações semânticas;
+- Contexto arquitetural.
+
+Fluxo:
+
+```text
+Codebase
+   ↓
+AST + Semantic Analysis
+   ↓
+Knowledge Graph
+   ↓
+Relevant Context
+   ↓
+Agent
+```
+
+O ecossistema registra uma redução de **71,5× no volume de tokens consultados por sessão** no cenário descrito pela implementação. :contentReference[oaicite:6]{index=6}
+
+---
+
+# Orquestração de Agentes
+
+O ambiente atual possui **10 agentes AIOX especializados**:
 
 ```text
 @dev
@@ -300,340 +378,201 @@ O ambiente possui 10 agentes especializados:
 @devops
 ```
 
-Exemplos:
+Esses agentes participam de etapas como:
 
-```text
-@dev *help
-```
-
-```text
-@dev *task {nome}
-```
-
-Cada agente possui responsabilidades específicas dentro do fluxo de desenvolvimento.
+- Planejamento;
+- Implementação;
+- Testes;
+- Arquitetura;
+- Documentação;
+- Deploy;
+- Manutenção. :contentReference[oaicite:7]{index=7}
 
 ---
 
-# MCP Servers
+# MCP e Tooling
 
-O ecossistema atual integra três MCP servers principais.
+A camada de MCP é utilizada para conectar agentes a ferramentas externas.
 
-## GitNexus
+Atualmente, o ecossistema possui **3 MCP servers principais**, incluindo:
 
-Indexação e entendimento estrutural do projeto:
+- GitNexus;
+- OmniRoute;
+- Obsidian Master Kit. :contentReference[oaicite:8]{index=8}
 
-```bash
-gitnexus index .
-gitnexus serve
-```
-
----
-
-## OmniRoute
-
-Gateway para múltiplos provedores de IA:
-
-```bash
-omniroute start
-```
-
-Dashboard:
-
-```text
-http://localhost:3000
-```
+A ideia é ampliar progressivamente essa camada para permitir que agentes possam descobrir e utilizar diferentes ferramentas de maneira coordenada.
 
 ---
 
-## Obsidian Master Kit
+# Skills Discovery
 
-Inicialização:
-
-```text
-/obsidian-master-kit:init
-```
-
-Sincronização:
+Uma das características do ecossistema é tratar descoberta de capacidades como parte do próprio processo de desenvolvimento.
 
 ```text
-/obsidian-master-kit:sync
-```
-
----
-
-# Integração em Novos Projetos
-
-A infraestrutura pode ser incorporada a um novo projeto pela camada `.claude`:
-
-```bash
-cp -r Claude_Skills/.claude/ seu-projeto/.claude/
-```
-
-Depois, o projeto pode utilizar as capacidades configuradas pelo ecossistema.
-
-Exemplo:
-
-```text
-seu-projeto/
-└── .claude/
-    ├── skills/
-    ├── agents/
-    ├── memory/
-    └── config/
-```
-
----
-
-# Memory Persistente
-
-O ambiente possui uma camada de memória persistente para manter informações relevantes entre sessões e projetos.
-
-Estrutura:
-
-```text
-G:\Claude\memory\
-├── user.md
-├── decisions.md
-├── preferences.md
-└── Obsidian Vault/
-```
-
-### Camadas de persistência
-
-```text
-File Layer
-     ↓
-Vault Layer
-     ↓
-Cloud Layer
-```
-
-Cloud:
-
-```text
-MongoDB + Supabase
-```
-
-### Conteúdo persistido
-
-* Perfil;
-* Contexto;
-* Decisões técnicas;
-* Preferências;
-* Regras;
-* Feedback;
-* Conhecimento de projeto.
-
----
-
-# Graphify
-
-O **Graphify** adiciona uma camada de conhecimento estrutural ao ambiente utilizando:
-
-* AST;
-* relações entre arquivos;
-* relações semânticas;
-* contexto arquitetural.
-
-### Fluxo
-
-```text
-Codebase
-   ↓
-AST + Semantic Analysis
-   ↓
-Knowledge Graph
-   ↓
-Relevant Context
-   ↓
-Agent
-```
-
-O projeto registra uma redução de **71,5× no volume de tokens consultados por sessão**, de acordo com o cenário descrito na implementação.
-
-O objetivo é reduzir a quantidade de contexto bruto necessária para que um agente compreenda a estrutura relevante de um projeto.
-
----
-
-# Fluxo Típico
-
-```text
-1. Novo projeto
+/find-skills "tarefa"
         ↓
-2. Adicionar .claude/
+Discovery
         ↓
-3. /find-skills
+Seleção de Skill
         ↓
-4. Selecionar capacidades
-        ↓
-5. @architect
-        ↓
-6. @dev
-        ↓
-7. @qa
-        ↓
-8. @devops
-        ↓
-9. Memory / Decisions
-        ↓
-10. Graphify / Knowledge
+Execução
 ```
 
-A proposta é fazer com que o agente participe de etapas como:
-
-* planejamento;
-* implementação;
-* validação;
-* documentação;
-* memória;
-* manutenção;
-* entendimento arquitetural.
-
----
-
-# Infraestrutura Independente de Fornecedor
-
-Um dos princípios centrais desta linha de P&D é evitar dependência rígida de uma única empresa, modelo ou plataforma.
-
-A infraestrutura é projetada para permitir experimentação com diferentes ambientes:
+Caso uma capacidade não exista:
 
 ```text
-Claude
-Codex
-OpenCode
-OpenClaw
-Hermes
-Jarvis / Agents próprios
-        ↓
-┌────────────────────────────────┐
-│   Agentic AI Infrastructure     │
-├────────────────────────────────┤
-│ Skills                         │
-│ Agents                         │
-│ MCP                            │
-│ Memory                         │
-│ Context                        │
-│ Graph                          │
-│ Tools                          │
-│ Orchestration                  │
-└────────────────────────────────┘
+/skill-forge "nova capacidade"
 ```
 
-A ideia é construir componentes reutilizáveis que possam ser integrados a diferentes agentes, modelos e runtimes.
+A abordagem permite construir e ampliar continuamente o conjunto de competências disponíveis para os agentes. :contentReference[oaicite:9]{index=9}
 
 ---
 
-# O que este projeto demonstra
+# Estado Atual
 
-* Engenharia de infraestrutura para IA agentiva;
-* Arquitetura modular;
-* Orquestração de agentes;
-* Engenharia de contexto;
-* Sistemas de memória persistente;
-* Knowledge Graphs;
-* MCP;
-* Tool integration;
-* Workflow orchestration;
-* Provider-agnostic architecture;
-* Integração entre agentes e ferramentas;
-* Desenvolvimento assistido por IA;
-* Organização de ecossistemas Git;
-* Automação de workflows de engenharia;
-* Experimentação com diferentes runtimes.
+| Componente | Estado |
+|---|---|
+| **45 Repositórios** | ✅ Integrados |
+| **1553 Skills** | ✅ Disponíveis |
+| **10 Agentes AIOX** | ✅ Integrados |
+| **3 MCP Servers** | ✅ Integrados |
+| **Memory Persistente** | ✅ Ativa |
+| **Graphify** | ✅ Integrado |
+| **OpenClaw** | 🔬 Em estudo |
+| **Hermes** | 🔬 Em estudo |
+| **Windows Agent Runtime** | 🔬 Em estudo |
+| **VPS Infrastructure** | 🔬 Em estudo |
+| **Mac Mini Automation Node** | 🔬 Em estudo |
+| **IA Local / Native AI** | 🔬 Em estudo |
+| **Integração entre runtimes** | 🔄 Contínua |
+| **Expansão do ecossistema** | 🔄 Contínua |
 
 ---
 
-# Estrutura Geral
+# Fluxo de Evolução
 
 ```text
-Claude_Skills/
-│
-├── .claude/
-│   ├── agents/
-│   ├── skills/
-│   ├── memory/
-│   └── config/
-│
-├── submodules/
-│   ├── aios-core/
-│   ├── claude-mem/
-│   ├── GitNexus/
-│   ├── graphify/
-│   ├── OmniRoute/
-│   ├── obsidian-master-kit/
-│   └── ...
-│
-├── INSTALLATION.md
-├── MASTER-INDEX.md
-├── MCP-SERVERS.md
-├── SKILLS-REFERENCE.md
-└── README.md
-```
-
----
-
-# Documentação
-
-* **[INSTALLATION.md](INSTALLATION.md)** — Setup e configuração;
-* **[MASTER-INDEX.md](MASTER-INDEX.md)** — Índice dos repositórios;
-* **[MCP-SERVERS.md](MCP-SERVERS.md)** — MCP servers integrados;
-* **[SKILLS-REFERENCE.md](SKILLS-REFERENCE.md)** — Índice das skills.
-
----
-
-# Status Atual do Ecossistema
-
-| Componente                  | Estado        |
-| --------------------------- | ------------- |
-| **45 Repositórios**         | ✅ Integrados  |
-| **1553 Skills**             | ✅ Disponíveis |
-| **10 Agentes AIOX**         | ✅ Integrados  |
-| **3 MCP Servers**           | ✅ Integrados  |
-| **Memory Persistente**      | ✅ Ativa       |
-| **Graphify**                | ✅ Integrado   |
-| **Expansão do ecossistema** | 🔄 Contínua   |
-
-### Evolução contínua
-
-```text
-45 Repos atuais
+45 Repos Atuais
       ↓
 Avaliação de novas ferramentas
       ↓
-Integração de novos componentes
+Teste de novos runtimes
       ↓
-Novos agentes / skills / MCPs
+OpenClaw / Hermes / Outros
       ↓
-Atualização da infraestrutura
+IA Local / Native AI
+      ↓
+Windows / VPS / Mac Mini
+      ↓
+Novas integrações
+      ↓
+Orquestração
+      ↓
+Automação
       ↓
 Novo estado do ecossistema
       ↓
 Repetição contínua
 ```
 
-> **45 repositórios representam o estado atual do ecossistema, não o estado final.**
-
-O conjunto é tratado como um **laboratório vivo de Agentic AI**, no qual novos componentes podem ser incorporados, substituídos ou reorganizados continuamente.
+> **O ecossistema não possui um estado final fixo. Cada novo runtime, ferramenta, agente ou ambiente pode se tornar um novo componente da infraestrutura.**
 
 ---
 
 # Roadmap de P&D
 
-A evolução do ecossistema está concentrada em:
+A pesquisa atual está concentrada em:
 
-* Maior abstração entre agentes e providers;
-* Runtimes independentes;
-* Orquestração entre agentes heterogêneos;
-* Evolução da memória persistente;
-* Knowledge Graphs mais completos;
-* Avaliação automática de agentes;
-* Observabilidade de workflows agentivos;
-* Agent-to-Agent communication;
-* Execução local-first;
-* Infraestrutura para agentes próprios;
-* Novas integrações conforme o ecossistema evolui.
+- Maior abstração entre agentes e providers;
+- Integração de múltiplos runtimes;
+- OpenClaw no Windows;
+- Hermes;
+- Execução em VPS;
+- Mac Mini como nó de automação;
+- IA local;
+- Modelos nativos;
+- Infraestrutura híbrida;
+- Agent-to-Agent communication;
+- Tool orchestration;
+- Memory persistente;
+- Knowledge Graphs;
+- Avaliação automática de agentes;
+- Observabilidade;
+- Execução local-first;
+- Agentes próprios;
+- Automação entre projetos.
 
-A direção é evoluir de um conjunto integrado de ferramentas para uma **infraestrutura modular própria para Agentic AI**.
+A direção é evoluir de um conjunto de ferramentas integradas para uma **infraestrutura própria, distribuída, modular e continuamente adaptável para Agentic AI**.
+
+---
+
+# O que este projeto demonstra
+
+- Engenharia de infraestrutura para IA agentiva;
+- Orquestração de múltiplos agentes;
+- Provider-agnostic architecture;
+- Context Engineering;
+- Memory Systems;
+- Knowledge Graphs;
+- MCP;
+- Tool Integration;
+- Workflow Orchestration;
+- Automação;
+- IA local;
+- Infraestrutura VPS;
+- Edge / Local AI;
+- Integração de runtimes;
+- Desenvolvimento assistido por IA;
+- Organização de ecossistemas Git;
+- Pesquisa aplicada em Agentic AI.
+
+---
+
+# Status Final
+
+🔵 **Pesquisa / P&D — Ecossistema ativo e em evolução contínua**
+
+O **Claude Skills — Ecossistema Jarvis** permanece em estudo e desenvolvimento constante.
+
+A infraestrutura atual é apenas o estado presente de uma arquitetura que continua sendo ampliada para conectar:
+
+```text
+Agents
++
+Skills
++
+MCP
++
+Memory
++
+Context
++
+Graph
++
+n8n
++
+OpenClaw
++
+Hermes
++
+VPS
++
+Windows
++
+Mac Mini
++
+Local AI
++
+Native AI
++
+Projects
+        ↓
+   JARVIS ECOSYSTEM
+```
+
+O objetivo é construir uma infraestrutura em que **novos agentes, novos runtimes, novos dispositivos e novas ferramentas possam ser incorporados continuamente**, permitindo que a capacidade total do ecossistema cresça sem ficar presa a uma única plataforma.
+
+Este projeto é tratado como um **laboratório vivo de Pesquisa e Desenvolvimento**, no qual a arquitetura é constantemente testada, melhorada, conectada e reorganizada conforme novas tecnologias e necessidades aparecem. :contentReference[oaicite:10]{index=10}
 
 ---
 
@@ -643,20 +582,12 @@ A direção é evoluir de um conjunto integrado de ferramentas para uma **infrae
 
 Cada submódulo mantém sua própria licença e seus próprios termos de uso.
 
-Consulte o repositório correspondente antes de redistribuir ou incorporar qualquer componente.
-
 ---
 
 # Autor
 
 **Yuri Fernando Dubbern**
 
-AI/ML Engineer · Generative AI · AI Agents · Data Engineering · Intelligent Automation
+AI/ML Engineer · Agentic AI · Generative AI · Intelligent Automation · AI Infrastructure · Research & Development
 
 [LinkedIn](https://www.linkedin.com/in/yuridubbern) · [GitHub](https://github.com/Yuri-Fernando) · [Lattes](http://lattes.cnpq.br/7151392692642166) · [Linktree](https://linktr.ee/yuri.f.dubbern)
-
----
-
-> **Este repositório faz parte de uma linha contínua de P&D em infraestrutura para IA agentiva.**
->
-> O objetivo é construir uma camada própria de **skills, agentes, memória, contexto, ferramentas e orquestração**, capaz de evoluir continuamente e permanecer independente de um único fornecedor de IA.
